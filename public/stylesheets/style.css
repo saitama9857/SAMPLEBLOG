@@ -1,0 +1,57 @@
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/*
+ black : #17252a
+ white: #feffff
+ light: #def2f1
+ primary: #3aafa9
+ accent: #2b7a78
+ */
+.nav{
+    background-color: #3aafa9;
+    font-weight: bold;
+    color: #def2f1;
+}
+.login-form{
+    width: 50%;
+    min-width: 500px;
+    padding: 20px;
+    left: auto;
+    right: auto;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+.b-black{
+  background-color: #17252a;
+}
+.b-white{
+  background-color: #feffff;
+}
+.b-light{
+  background-color: #def2f1;
+}.b-primary{
+   background-color: #3aafa9;
+ }
+.b-accent{
+    background-color: #2b7a78;
+}
+.f-black{
+  color: #17252a;
+}
+.f-white{
+  color: #feffff;
+}
+.f-light{
+  color: #def2f1;
+}
+.f-primary{
+  color: #3aafa9;
+}
+.f-accent{
+  color: #2b7a78;
+}

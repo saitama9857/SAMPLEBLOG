@@ -1,0 +1,51 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <div class="center">
+            <h2>Add post</h2>
+            <form class="needs-validation" action="/api/addpost" method="post">
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="validationCustomUsername">Title</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="title" id="validationCustomUsername" placeholder="Title" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a title.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="validationCustom03">Body</label>
+                        <textarea type="password" name="body" class="form-control" id="validationCustom03" placeholder="Body" required></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a valid body.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">add</button>
+            </form>
+
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                    'use strict';
+                    window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+    </div>
+{% endblock %}
